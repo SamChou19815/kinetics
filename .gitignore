@@ -1,0 +1,14 @@
+# Exclude Build Files
+**/out/*
+**/build/*
+**/.gradle/*
+**/libs/*
+**/dist/*
+*.class
+
+# Exclude IDEA files
+**/.idea/*
+*.iml
+
+# Exclude System Files
+.DS_Store
