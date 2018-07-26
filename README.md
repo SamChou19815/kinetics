@@ -15,7 +15,7 @@ serious stuff (e.g. serving millions of users), but you can freely use it during
 exactly what this library is designed for).
 
 You can read the docs [here](https://docs.developersam.com/kinetics/). If there is any confusion, 
-you can directly
+you can directly read the code.
 
 ## Gradle Config
 
