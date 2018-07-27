@@ -29,13 +29,11 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-    implementation 'com.github.SamChou19815:kinetics:0.1.0'
+    implementation 'com.github.SamChou19815:kinetics:0.2.0'
 }
 ```
 
 ## Config Files
 
-Just put your Firebase credential in `secret/firebase-adminsdk.json` in the resource folder, and 
-you're ready to go.
-
-(Don't forget to include that file in `.gitignore`!)
+The library uses Google's default credential. You need to property setup your GCP credential in
+your development environment.

@@ -16,12 +16,12 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     // Spark
     implementation 'com.sparkjava:spark-core:2.7.2'
     implementation 'com.sparkjava:spark-kotlin:1.0.0-alpha'
     // Firebase
-    implementation 'com.google.firebase:firebase-admin:6.2.0'
+    implementation 'com.google.firebase:firebase-admin:6.3.0'
     // Spark Pac4j
     api 'org.pac4j:spark-pac4j:2.2.0'
     api 'org.pac4j:pac4j-http:2.2.1'

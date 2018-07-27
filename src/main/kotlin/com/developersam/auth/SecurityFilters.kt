@@ -29,17 +29,16 @@ import java.util.logging.Logger
  * [SecurityFilters] can build different specialized security filters.
  * Best practice: when using it, you should create a singleton from this class.
  *
- * @property adminEmails the list of emails belong to the admin user.
+ * @property adminEmails the list of emails belong to the admin user, which defaults to `null`.
  */
-open class SecurityFilters(private val adminEmails: Set<String>) {
+open class SecurityFilters(private val adminEmails: Set<String> = emptySet()) {
 
     /**
      * [firebaseAuth] is the global Authentication Handler.
      */
-    private val firebaseAuth: FirebaseAuth = System::class.java
-            .getResourceAsStream("/secret/firebase-adminsdk.json")
-            .let { GoogleCredentials.fromStream(it) }
-            .let { FirebaseOptions.Builder().setCredentials(it).build() }
+    private val firebaseAuth: FirebaseAuth = FirebaseOptions.Builder()
+            .setCredentials(GoogleCredentials.getApplicationDefault())
+            .build()
             .let { FirebaseApp.initializeApp(it) }
             .let { FirebaseAuth.getInstance(it) }
 
