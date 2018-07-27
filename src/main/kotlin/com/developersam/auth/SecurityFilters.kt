@@ -34,13 +34,14 @@ import java.util.logging.Logger
 open class SecurityFilters(private val adminEmails: Set<String> = emptySet()) {
 
     /**
+     * [firebaseApp] is the global firebase app.
+     */
+    val firebaseApp: FirebaseApp = FirebaseApp.initializeApp()
+
+    /**
      * [firebaseAuth] is the global Authentication Handler.
      */
-    private val firebaseAuth: FirebaseAuth = FirebaseOptions.Builder()
-            .setCredentials(GoogleCredentials.getApplicationDefault())
-            .build()
-            .let { FirebaseApp.initializeApp(it) }
-            .let { FirebaseAuth.getInstance(it) }
+    private val firebaseAuth: FirebaseAuth = FirebaseAuth.getInstance(firebaseApp)
 
     /**
      * [authorizationGenerator] is the generator used to assign roles to users.
