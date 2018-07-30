@@ -1,5 +1,7 @@
 # KineticS
 
+<img src="https://developersam.com/assets/app-icons/kinetics.png" width="100%" />
+
 KineticS is an opinionated Kotlin library to quickly bootstrap your backend on Google Cloud
 Platform.
 
