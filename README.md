@@ -31,7 +31,7 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-    implementation 'com.github.SamChou19815:kinetics:0.3.1'
+    implementation 'com.github.SamChou19815:kinetics:0.4.0'
 }
 ```
 

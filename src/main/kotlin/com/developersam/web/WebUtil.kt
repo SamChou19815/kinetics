@@ -1,5 +1,7 @@
 package com.developersam.web
 
+import com.developersam.web.gson.CursorTypeAdapter
+import com.developersam.web.gson.KeyTypeAdapter
 import com.google.cloud.datastore.Cursor
 import com.google.cloud.datastore.Key
 import com.google.gson.Gson
@@ -9,8 +11,6 @@ import spark.ResponseTransformer
 import spark.Route
 import spark.Spark
 import spark.kotlin.halt
-import typedstore.gson.CursorTypeAdapter
-import typedstore.gson.KeyTypeAdapter
 import kotlin.system.measureTimeMillis
 
 /**
