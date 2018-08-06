@@ -1,6 +1,10 @@
 # KineticS
 
-<img src="https://developersam.com/assets/app-icons/kinetics.png" width="100%" />
+[![Build Status](https://travis-ci.com/SamChou19815/kinetics.svg?branch=master)](https://travis-ci.com/SamChou19815/kinetics)
+[![Release](https://jitpack.io/v/SamChou19815/kinetics.svg)](https://jitpack.io/#SamChou19815/kinetics)
+![GitHub](https://img.shields.io/github/license/SamChou19815/kinetics.svg)
+
+![KineticS](https://developersam.com/assets/app-icons/kinetics.png)
 
 KineticS is an opinionated Kotlin library to quickly bootstrap your backend on Google Cloud
 Platform.
@@ -21,8 +25,6 @@ you can directly read the code.
 
 ## Gradle Config
 
-[![Release](https://jitpack.io/v/SamChou19815/kinetics.svg)](https://jitpack.io/#SamChou19815/kinetics)
-
 Add this to your `build.gradle` to use the artifact.
 
 ```groovy
@@ -31,7 +33,7 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 dependencies {
-    implementation 'com.github.SamChou19815:kinetics:0.4.0'
+    implementation 'com.github.SamChou19815:kinetics:+'
 }
 ```
 
