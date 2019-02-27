@@ -4,8 +4,6 @@
 [![Release](https://jitpack.io/v/SamChou19815/kinetics.svg)](https://jitpack.io/#SamChou19815/kinetics)
 ![GitHub](https://img.shields.io/github/license/SamChou19815/kinetics.svg)
 
-![KineticS](https://developersam.com/assets/app-icons/kinetics.png)
-
 KineticS is an opinionated Kotlin library to quickly bootstrap your backend on Google Cloud
 Platform.
 
@@ -19,9 +17,6 @@ Currently, the library contains the out-of-the-box implementation for:
 The project is in beta, which means all APIs are subject to change. You should not use this for very
 serious stuff (e.g. serving millions of users), but you can freely use it during Hackathon (that's
 exactly what this library is designed for).
-
-You can read the docs [here](https://docs.developersam.com/kinetics/). If there is any confusion, 
-you can directly read the code.
 
 ## Gradle Config
 
